@@ -1773,7 +1773,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Util == 'undefined') {
 				prefix = "",
 				the_url = url.split("://", 2);
 			
-			if (loc.match("http")) {
+			if (loc.match("http:")) {
 				prefix = loc;
 			} else {
 				prefix = "https";
