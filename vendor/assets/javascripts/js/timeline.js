@@ -1773,7 +1773,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Util == 'undefined') {
 				prefix = "",
 				the_url = url.split("://", 2);
 			
-			if (loc.match("http")) {
+			if (loc.match("http:")) {
 				prefix = loc;
 			} else {
 				prefix = "https";
@@ -4471,9 +4471,9 @@ if(typeof VMM != 'undefined' && typeof VMM.MediaElement == 'undefined') {
 				}
 			// IMAGE
 				if (m.type				==	"image") {
-					if (m.id.match("https://")) {
-						m.id = m.id.replace("https://","http://");
-					}
+					// if (m.id.match("https://")) {
+					//	m.id = m.id.replace("https://","http://");
+					// }
 					mediaElem			=	"<div class='media-image media-shadow'><img src='" + m.id + "' class='media-image'></div>";
 			// FLICKR
 				} else if (m.type		==	"flickr") {
